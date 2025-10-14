@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Parser</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            background-color: #f5f5f5; 
+        }
+        h2 { 
+            color: #333; 
+            margin-bottom: 20px;
+        }
+        form { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            width: 400px; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1); 
+        }
+        label {
+            color: #555;
+            font-weight: 500;
+        }
+        select { 
+            width: 100%;
+            padding: 12px; 
+            margin-top: 10px; 
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            background-color: #fafafa;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button { 
+            width: 100%;
+            padding: 12px; 
+            margin-top: 20px; 
+            font-size: 16px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Credit Card Statement Parser</h2>
+    <form method="POST" action="/parse">
+        <label>Select a Sample PDF:</label><br>
+        <select name="pdf_name" required>
+            {% for pdf in pdfs %}
+                <option value="{{ pdf }}">{{ pdf }}</option>
+            {% endfor %}
+        </select><br>
+        <button type="submit">Parse PDF</button>
+    </form>
+</body>
+</html>
