@@ -33,10 +33,3 @@ A **Python Flask application** that extracts key information from credit card PD
 ![Parsed Result](screenshots/result.png)
 
 ---
-
-## Installation
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/<your-username>/credit-card-statement-parser.git
-cd credit-card-statement-parser
