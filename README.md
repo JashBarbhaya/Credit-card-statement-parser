@@ -1,6 +1,7 @@
 # Credit Card Statement Parser
 
-A **Python Flask application** that extracts key information from credit card PDF statements for multiple banks including **ICICI, HDFC, AXIS, SBI, and KOTAK**. It retrieves essential details such as Bank Name, Cardholder Name, Card Last 4 Digits, Billing Cycle, Payment Due Date, and Total Amount Due.  
+A Python Flask web application that automatically extracts key details from credit card PDF statements of major Indian banks — **ICICI**, **HDFC**, **AXIS**, **SBI**, and **KOTAK**. It identifies the bank and retrieves essential information such as **Bank Name, Cardholder Name, Card Last 4 Digits, Billing Cycle, Payment Due Date**, and **Total Amount Due**. The app intelligently handles different statement formats and neatly displays the extracted information on a results page.
+ 
 
 ---
 
@@ -31,5 +32,3 @@ A **Python Flask application** that extracts key information from credit card PD
 
 ### Parsed Result
 ![Parsed Result](screenshots/result.png)
-
----
